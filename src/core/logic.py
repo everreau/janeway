@@ -155,7 +155,7 @@ def send_orcid_request(request, user):
             reverse("core_edit_profile"),
         ),
     }
-    log_dict = {"level": "Info", "types": "ORCiD Request", "target": None}
+    log_dict = {"level": "Info", "types": "ORCID Request", "target": None}
     notify_helpers.send_email_with_body_from_setting_template(
         request,
         "orcid_request",
